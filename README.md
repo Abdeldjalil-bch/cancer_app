@@ -65,3 +65,62 @@ L'application utilise **17 features** réparties en plusieurs catégories :
 
 ### Marqueurs génétiques
 - `RAS_0.0`, `RAS_2.0` : Statut RAS
+
+## 📦 Dépendances
+
+```
+streamlit
+pandas
+scikit-learn
+xgboost
+catboost
+lightgbm
+```
+
+
+### Faire une prédiction
+
+1. Remplissez les champs avec les données du patient
+2. Cliquez sur "Make Prediction"
+3. Consultez les résultats :
+   - Classe prédite (Amélioration / Non amélioration)
+   - Probabilités pour chaque classe
+   - Graphique de visualisation
+
+## 📁 Structure du projet
+
+```
+cancer_app/
+│
+├── app.py                 # Application principale Streamlit
+├── requirements.txt       # Dépendances Python
+├── README.md             # Documentation
+├── X.csv                 # Données features (optionnel)
+├── y.csv                 # Données cibles (optionnel)
+└── data/                 # Dossier alternatif pour les données
+    ├── X.csv
+    └── y.csv
+```
+
+## 🎓 Contexte académique
+
+Ce projet a été développé dans le cadre de mes études en **Data Science et Intelligence Artificielle** à l'**ENSSEA** (École Nationale Supérieure de Statistique et d'Économie Appliquée).
+
+**Objectif pédagogique** : Appliquer les techniques de Machine Learning à un problème médical réel en créant une application déployable et utilisable par des professionnels de santé.
+
+## 🔬 Méthodologie
+
+1. **Prétraitement des données** : Sélection et normalisation des features
+2. **Split des données** : 80% train / 20% test avec stratification
+3. **Entraînement** : Modèle d'ensemble avec hyperparamètres optimisés
+4. **Validation** : Métriques de classification sur le jeu de test
+5. **Déploiement** : Application Streamlit interactive
+
+## 👨‍💻 Auteur
+
+**Boucherite Ahmed Abdeldjalil**
+- 🎓 Étudiant en Data Science & IA à l'ENSSEA
+- 📧 Email : a.a.boucherite@gmail.com
+- 💼 LinkedIn : [www.linkedin.com/in/abdeldjalil-boucherite-745619378]
+- 🐙 GitHub : [Abdeldjalil-bch]
+
